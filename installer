@@ -1,0 +1,15 @@
+#!/bin/bash
+sudo apt-get install wine
+sudo apt-get install python3
+pip install tkinter
+chmod +x start
+cp start /bin
+cd src
+cp binär.py /bin
+cp qaqa_rechner.exe /bin
+cp umrechnen.py /bin
+cd ..
+rmdir src
+rm start
+rm $0
+

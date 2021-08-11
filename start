@@ -1,0 +1,13 @@
+#!/bin/bash
+# Demonstriert dialog --menu
+# Name : dialog6
+os=`dialog --menu "welcher rechner" 0 0 0 "standart" "" "programierer" "" "umrechner" "" 3>&1 1>&2 2>&3`
+dialog --clear
+clear
+if [ $os == standart ]; then
+wine qaqa_rechner.exe
+elif [ $os == programierer ]; then
+python3 binär.py
+elif [ $os == umrechner ]; then
+python3 umrechnen.py
+fi
