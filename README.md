@@ -1,0 +1,2 @@
+# rechner
+sinkilli la qaqa
